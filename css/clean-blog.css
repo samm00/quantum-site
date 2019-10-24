@@ -154,7 +154,7 @@ img::-moz-selection {
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(100, 100, 100, 0.3);
-    filter:blur(4px);
+    backdrop-filter:blur(4px);
   }
   #mainNav.is-fixed .navbar-brand {
     color: #999;
