@@ -94,8 +94,8 @@ img::-moz-selection {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid rgba(60, 60, 60, 0.35);
-  background-color: rgba(60, 60, 60, 0.3);
+  border-bottom: 1px solid rgba(65, 65, 65, 0.35);
+  background-color: rgba(65, 65, 65, 0.33);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -155,8 +155,8 @@ img::-moz-selection {
     position: fixed;
     top: -67px;
     transition: transform 0.2s;
-    border-bottom: 1px solid rgba(60, 60, 60, 0.35);
-    background-color: rgba(60, 60, 60, 0.3);
+    border-bottom: 1px solid rgba(65, 65, 65, 0.35);
+    background-color: rgba(65, 65, 65, 0.33);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
