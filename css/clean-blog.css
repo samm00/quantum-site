@@ -32,6 +32,8 @@ h6 {
 
 h1{ color: #3095b1; font-size:200% !important;}
 
+.pHead{color: #b19530;}
+
 .subheading{ color: #afafaf; font-weight: 500 !important;}
 
 a {
@@ -103,7 +105,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #b070cc !important;
+  color: #b070cc;
 }
 
 #mainNav .navbar-toggler {
@@ -112,6 +114,7 @@ img::-moz-selection {
   padding: 13px;
   text-transform: uppercase;
   color: #999;
+  border: none;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -129,10 +132,10 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #fff;
+    color: #b070cc;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(200, 200, 200, 0.8);
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
@@ -161,7 +164,7 @@ img::-moz-selection {
     -webkit-backdrop-filter: blur(20px);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #999;
+    color: #b070cc;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -419,3 +422,5 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+.rLogo{color:#c44 !important;}
