@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Quantum Issues</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,7 +61,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
             <h1 class="pHead">Here are some perspectives on the security of your data</h1>
-            <h2 class="subheading">Check them out!</h2>
+            <h2 class="subheading">Check them out by clicking on them to open/close their information.</h2>
           </div>
         </div>
       </div>
@@ -73,20 +73,32 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-
-          <h2 class="section-heading">Perspective 1</h2>
-
-          <blockquote class="blockquote">"We should spread awareness of the issue and encourage governments worldwide to create and enforce legislation that mandates companies that rely on encrypted data to begin to update to the new algorithms."</blockquote>
-
-          <p>Those who fall in this category staunchly believe that we must be prepared for the advent of quantum computing as an imminent threat and must be dealt with as swiftly as possible. If enough of a commotion is made, governments must take notice, and many will likely heed the call to ensure that data remains secure. Further, governments have their own interests to protect, as all governments (probably) use encryption to send and store confidential information.</p>
-
-          <h2 class="section-heading">Perspective 2</h2>
-
-          <blockquote class="blockquote">"We should let the future unfold on its own. Quantum-resistant algorithms do already exist, and due to privacy being in nearly everyone’s best interest, they will be gradually adopted on their own, in time"</blockquote>
+          <div class="post-preview collapsible">
+            <h2 class="section-heading">
+              Perspective 1
+            </h2>
+            <blockquote class="blockquote">"We should spread awareness of the issue and encourage governments worldwide to create and enforce legislation that mandates companies that rely on encrypted data to begin to update to the new algorithms."</blockquote>
+          </div>
+          <div class="content">
+            <p>Those who fall in this category staunchly believe that we must be prepared for the advent of quantum computing as an imminent threat and must be dealt with as swiftly as possible. If enough of a commotion is made, governments must take notice, and many will likely heed the call to ensure that data remains secure. Further, governments have their own interests to protect, as all governments (probably) use encryption to send and store confidential information.</p>
+          </div>
           
-          <p>In order for companies to gain the public trust, it may be necessary for them to update their encryptions in order to retain customers and keep in business. Additionally, even today, some encryption schemes that are considered breakable by the latest technology (i.e. RSA 512) are still in minimal use (Stubbs). According to this perspective, in 25 years, most data will be secure - at least secure enough that there is not much to worry about.</p>
+          
+          <div class="post-preview collapsible">
+            <h2 class="section-heading">
+              Perspective 2
+            </h2>
+            <blockquote class="blockquote">"We should let the future unfold on its own. Quantum-resistant algorithms do already exist, and due to privacy being in nearly everyone’s best interest, they will be gradually adopted on their own, in time"</blockquote>
+          </div>
+          <div class="content">
+            <p>Those who hold this view do not believe it is a big deal if a few algorithms securing less important information don’t get updated. Even today, some encryption schemes that are considered breakable by the latest technology (i.e. RSA 512) are still in <a href=”www.cryptomathic.com/news-events/blog/quantum-computing-and-its-
+              Impact-on-cryptography” target=”_blank”>minimal use</a>. A minority of encryptions still use these outdated technologies - and data breaches are still relatively uncommon. One could argue that the difference between a state-of-the art encryption algorithm that is quantum susceptible and an encryption algorithm that is outdated today are different in that the technology to break these encryptions aren’t widespread. However, there’s no reason to believe quantum computers capable of breaking modern encryption standards will be commercially available anytime soon. <br><br>The estimate of 25 years is only until the first production of a quantum computer - which is worrying, but it will likely take even longer for such a device to land in the hands of a person with malicious intent. Obviously, the ideal is to update all encryption schemes before such a device exists at all, but if companies such as IBM or Google have one - is it really all that worrisome?  Those who hold this view believe that all highly sensitive data will be secure enough within 25 years, and an encryption crisis will not occur, because all data that needs to be secure will be.
+              <br><br>Those who hold this view point out that mathematicians and scientists <a href=”https://www.nature.com/articles/543171a” target=”_blank”>have already developed</a> (and are still developing) quantum-resistant algorithms. Therefore, as long as these algorithms are implemented in a timely fashion (within 25 years), highly sensitive data should remain secure. Further, estimates of phasing out encryption algorithms, using evidence from past endeavors, hover around 10 years, allowing this endeavor to be <a href=”https://carnegieendowment.org/2019/04/25/implications-of-quantum-comp
+              Uting-for-encryption-policy-pub-78985” target=”_blank”>entirely plausible</a> within the time frame.According to this perspective, in 25 years, most data will be secure - at least secure enough that there is not much to worry about.
+            </p>
+          </div>
 
-          <h2 class="section-heading">Perspective 3</h2>
+          <h2 class="section-heading sh3">Perspective 3</h2>
 
           <blockquote class="blockquote">"While it does seem logical that the shift would occur naturally, many encryption algorithms are buried deep inside existing programs, and it is unlikely they would be updated without nudging."</blockquote>
           
@@ -146,6 +158,22 @@
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/c4ea0ff665.js" crossorigin="anonymous"></script>
 
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+  </script>
 </body>
 
 </html>

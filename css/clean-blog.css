@@ -428,3 +428,27 @@ footer .copyright {
 .masthead .container{
     height: 500px;
 }
+
+.collapsible{
+    
+}
+
+.section-heading{
+    color: #c44;
+    margin-top: 3px;
+}
+
+.section-heading:hover{
+    color:#c18530;
+}
+
+.content {
+  margin-top: -15px;
+  padding-top: 0px;
+  display: none;
+  overflow: hidden;
+}
+
+.blockquote{
+    display: block;
+}
